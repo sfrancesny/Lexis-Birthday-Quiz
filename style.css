@@ -43,7 +43,7 @@
   color: blue;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
   #question-container {
     width: 90%;
   }
