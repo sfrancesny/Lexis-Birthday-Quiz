@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lexis Birthday Quiz</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+      .slideshow-container {
+        position: relative;
+      }
+
+      .slide {
+        display: none;
+      }
+
+      .quiz-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 1;
+      }
+
+      .start-button {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="LexisQuiz0.jpg" alt="Image 1">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz1.jpg" alt="Image 2">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz2.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz_4.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz5.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz7.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz8.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz9.jpg" alt="Image 3">
+      </div>
+      <div class="slide">
+        <img src="LexisQuiz10.jpg" alt="Image 3">
+      </div>
+    </div>
+
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+
+    <div class="quiz-container">
+      <h1>How Well Do You Know Lexis?</h1>
+      <div id="question-container"></div>
+      <button id="start-button" class="start-button">Start Quiz</button>
+    </div>
+
+    <div id="timer">Time Remaining: <span id="time-remaining"></span></div>
+    <div id="feedback"></div>
+    <div id="score-form" style="display: none;">
+      <input type="text" id="initials" placeholder="Enter initials" />
+      <button id="save-score">Save Score</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
